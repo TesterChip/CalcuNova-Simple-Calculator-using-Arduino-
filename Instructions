@@ -13,11 +13,16 @@
 - Columns (C1–C4) → Arduino pins A3, A2, A1, A0
 ==========================================================
 📺 LCD (16x2 in 4-bit mode)
-- VSS → GND
-- VDD → 5V
-- V0 → GND (or middle pin of a 10k potentiometer for contrast)
-- RS → D12
-- RW → GND
-- E → D11
-- D4–D7 → D10, D9, D8, D7 respectively
+Great choice! Using an I2C LCD with your Arduino calculator simplifies wiring and frees up digital pins. Here’s everything you need to get started:
+
+🔌 I2C LCD Wiring (16x2)
+| I2C Pin | Function | Arduino Pin | 
+|   GND   | Ground   |     GND     | 
+|   VCC   | Power    |      V5     | 
+|   SDA   | Data Line|      A4     | 
+|   SCL   |Clock Line|      A5     | 
+
+Note: These are standard I2C pins for Arduino Uno. If you're using a different board, the SDA/SCL pins may vary.
 ===========================================================
+
+
