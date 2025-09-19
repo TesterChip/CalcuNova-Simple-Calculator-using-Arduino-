@@ -1,0 +1,23 @@
+🧰 Wiring Instructions
+==========================================================
+🛠️ Components You'll Need
+- Arduino Uno
+- 4x4 Keypad
+- 16x2 LCD or I2C LCD
+- Jumper wires
+- Breadboard
+- Optional: Resistors, power supply
+==========================================================
+🔢 Keypad (4x4)
+- Rows (R1–R4) → Arduino pins D5, D4, D3, D2
+- Columns (C1–C4) → Arduino pins A3, A2, A1, A0
+==========================================================
+📺 LCD (16x2 in 4-bit mode)
+- VSS → GND
+- VDD → 5V
+- V0 → GND (or middle pin of a 10k potentiometer for contrast)
+- RS → D12
+- RW → GND
+- E → D11
+- D4–D7 → D10, D9, D8, D7 respectively
+===========================================================
